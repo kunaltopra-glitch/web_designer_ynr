@@ -122,11 +122,11 @@ main#app>.hero{min-height:calc(100svh - 70px)}
 @media(max-width:600px){main#app>.sec{padding-bottom:75px}.ig-card{padding:24px}}
 </style></head><body data-page="contact">
 <div id="ld"><b>web_designer_ynr</b></div><div id="ts" role="status"></div>
-<nav class="top" aria-label="Main"><div class="w"><a class="logo" href="./web_designer_ynr_%20Premium%20Web%20Design%20Studio.html"><img class="brand-mark" src="logo.jpeg" alt="">web_designer_ynr</a>
-<div class="nl" id="nl"><a href="./web_designer_ynr_%20Premium%20Web%20Design%20Studio.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./designs.html">Designs</a><a href="./work.html">Our Work</a><a href="./contact.html">Contact</a></div>
+<nav class="top" aria-label="Main"><div class="w"><a class="logo" href="./index.html"><img class="brand-mark" src="logo.jpeg" alt="">web_designer_ynr</a>
+<div class="nl" id="nl"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./designs.html">Designs</a><a href="./work.html">Our Work</a><a href="./contact.html">Contact</a></div>
 <a class="btn pr d mag" href="./contact.html">Get a Website</a><button class="bg" id="bg" aria-label="Menu"><i data-lucide="menu"></i></button></div></nav>
 <main id="app"></main>
-<footer><div class="w"><div class="fg"><div><a class="logo" href="./web_designer_ynr_%20Premium%20Web%20Design%20Studio.html"><img class="brand-mark" src="logo.jpeg" alt="">web_designer_ynr</a><p class="mu" style="margin-top:14px;max-width:24em;font-size:14px">Freelance web design and development from Yamunanagar, Haryana. Turning ideas into digital experiences.</p></div>
+<footer><div class="w"><div class="fg"><div><a class="logo" href="./index.html"><img class="brand-mark" src="logo.jpeg" alt="">web_designer_ynr</a><p class="mu" style="margin-top:14px;max-width:24em;font-size:14px">Freelance web design and development from Yamunanagar, Haryana. Turning ideas into digital experiences.</p></div>
 <div><h4>Navigate</h4><a href="./about.html">About</a><a href="./services.html">Services</a><a href="./work.html">Our Work</a><a href="./contact.html">Contact</a></div><div><h4>Categories</h4><span id="fc"></span></div>
 <div><h4>Connect</h4><a class="ig" target="_blank" rel="noopener" href="#">Instagram · @web_designer_ynr</a></div></div>
 <p class="cp">© 2026 web_designer_ynr. All rights reserved. Yamunanagar, Haryana, India.</p></div></footer>
@@ -199,7 +199,7 @@ ov.onclick=e=>{const t=e.target.closest(".it");if(t){t.classList.toggle("on");$(
 $$("[data-dv]").forEach(b=>b.onclick=()=>{$$("[data-dv]").forEach(x=>x.classList.toggle("on",x===b));$("#cv").classList.toggle("mo",!!b.dataset.dv)})}}
 function route(first){const h=location.hash.slice(1)||document.body.dataset.page||"home",c=byId(h),a=$("#app"),tabs=["home","about","services","designs","work","contact"],pageName=h==="categories"?"designs":h,active=c?"designs":tabs.includes(pageName)?pageName:"home";$("#nl").classList.remove("o");
 const page=()=>{if(c)return cat(c);const doc=new DOMParser().parseFromString(home(),"text/html"),sectionId=pageName==="designs"?"categories":tabs.includes(pageName)?pageName:"home";return doc.getElementById(sectionId)?.outerHTML||doc.getElementById("home").outerHTML};
-const tabFiles={home:"./web_designer_ynr_%20Premium%20Web%20Design%20Studio.html",about:"./about.html",services:"./services.html",designs:"./designs.html",work:"./work.html",contact:"./contact.html"};
+const tabFiles={home:"./index.html",about:"./about.html",services:"./services.html",designs:"./designs.html",work:"./work.html",contact:"./contact.html"};
 const go=()=>{a.innerHTML=page();$$(".nl a").forEach(x=>x.classList.toggle("act",x.getAttribute("href")===tabFiles[active]));wire();scrollTo(0,0);a.classList.remove("fo")};
 if(first)go();else{a.classList.add("fo");setTimeout(go,160)}}
 $("#fc").innerHTML=C.map(c=>`<a href="#${c[0]}">${c[1]}</a>`).join("");
